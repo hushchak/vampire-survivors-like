@@ -8,7 +8,6 @@ public static class SceneList
 
     public class Names
     {
-        public const string MainMenu = "MainMenu";
         public const string Session = "Session";
         public const string Lobby = "Lobby";
     }

@@ -6,6 +6,6 @@ public class Bootstrap : MonoBehaviour
     {
         // TODO: Setup logic
 
-        await SceneLoader.LoadScene(SceneList.Slots.Main, SceneList.Names.MainMenu, SceneArgs.Empty, true);
+        await SceneLoader.LoadScene(SceneList.Slots.Main, SceneList.Names.Session, SceneArgs.Empty, true);
     }
 }
