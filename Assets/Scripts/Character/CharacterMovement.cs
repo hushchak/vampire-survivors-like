@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private CharacterData defaultData;
+    private CharacterModel model;
 
-    public void Setup(CharacterData data)
+    public void Setup(CharacterModel model)
     {
-        defaultData = data;
+        this.model = model;
     }
 
     private void FixedUpdate()
     {
-        Vector2 movementOffset = InputReader.InputVector.normalized * defaultData.MovementSpeed * Time.fixedDeltaTime;
+        if (PauseManager.Instance.IsPaused)
+            return;
+
+        Vector2 movementOffset = InputReader.InputVector.normalized * model.GetMovementSpeed() * Time.fixedDeltaTime;
         transform.position = (Vector2)transform.position + movementOffset;
     }
 }

@@ -10,5 +10,6 @@ public static class SceneList
     {
         public const string Session = "Session";
         public const string Lobby = "Lobby";
+        public const string Run = "Run";
     }
 }

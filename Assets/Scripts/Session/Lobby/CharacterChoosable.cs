@@ -6,21 +6,21 @@ public class CharacterChoosable : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private LobbyCharacter lobbyCharacterPrefab;
     [SerializeField] private CharacterData characterData;
-    [SerializeField] private EventChannel characterChoosedChannel;
+    [SerializeField] private EventChannelCharacterData characterChoosenChannel;
 
     private void Awake()
     {
-        characterChoosedChannel.Subscribe(UpdateActive);
+        characterChoosenChannel.Subscribe(UpdateActive);
     }
 
     private void OnDestroy()
     {
-        characterChoosedChannel.Unsubscribe(UpdateActive);
+        characterChoosenChannel.Unsubscribe(UpdateActive);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        characterChoosedChannel.Raise();
+        characterChoosenChannel.Raise(characterData);
 
         LobbyCharacter character = Instantiate(lobbyCharacterPrefab, transform.position, Quaternion.identity);
         character.Setup(characterData);
@@ -28,7 +28,7 @@ public class CharacterChoosable : MonoBehaviour, IPointerClickHandler
         gameObject.SetActive(false);
     }
 
-    private void UpdateActive()
+    private void UpdateActive(CharacterData _)
     {
         if (gameObject.activeSelf == false)
             gameObject.SetActive(true);

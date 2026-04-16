@@ -185,4 +185,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterChoosable
   lobbyCharacterPrefab: {fileID: 2365260484671053724, guid: b372509a764f749eb88e64c1af1cb7b1, type: 3}
   characterData: {fileID: 11400000, guid: 1d14dac2965244eb98fcddeab0ee05a8, type: 2}
-  characterChoosedChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}
+  characterChoosenChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}

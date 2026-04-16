@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 7669046005061904256}
   - component: {fileID: 5577220915887755195}
   - component: {fileID: 2365260484671053724}
-  - component: {fileID: 8154297352595527732}
   m_Layer: 6
-  m_Name: LobbyCharacter_Archer
+  m_Name: LobbyCharacter_Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,20 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7917d1ab9fd084f06804ce5a0f902355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LobbyCharacter
-  movement: {fileID: 8154297352595527732}
-  characterChoosedChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}
---- !u!114 &8154297352595527732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073930417110516250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faca6f975a8ca4373b25787b58014c75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+  characterChoosenChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}
 --- !u!1 &2200341574840035763
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +174,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -396891595, guid: 4575126f6de5f4d77bdb3d806d137770, type: 3}
+  m_Sprite: {fileID: 3083089168873209362, guid: 4575126f6de5f4d77bdb3d806d137770, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

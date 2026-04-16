@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2073930417110516250
+--- !u!1 &3484375266244826417
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7669046005061904256}
-  - component: {fileID: 5577220915887755195}
-  - component: {fileID: 2365260484671053724}
-  - component: {fileID: 8154297352595527732}
-  m_Layer: 6
-  m_Name: LobbyCharacter_Knight
+  - component: {fileID: 3822286518100950778}
+  - component: {fileID: 6552739437040603198}
+  - component: {fileID: -4199419370872634640}
+  m_Layer: 7
+  m_Name: Choosable_Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7669046005061904256
+--- !u!4 &3822286518100950778
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073930417110516250}
+  m_GameObject: {fileID: 3484375266244826417}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2223405612330088584}
+  - {fileID: 318286369027414295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &5577220915887755195
+--- !u!61 &6552739437040603198
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073930417110516250}
+  m_GameObject: {fileID: 3484375266244826417}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -81,33 +80,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2365260484671053724
+--- !u!114 &-4199419370872634640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073930417110516250}
+  m_GameObject: {fileID: 3484375266244826417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7917d1ab9fd084f06804ce5a0f902355, type: 3}
+  m_Script: {fileID: 11500000, guid: 99366992b37224cd5873450264945aa3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LobbyCharacter
-  movement: {fileID: 8154297352595527732}
-  characterChoosedChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}
---- !u!114 &8154297352595527732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073930417110516250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faca6f975a8ca4373b25787b58014c75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
---- !u!1 &2200341574840035763
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterChoosable
+  lobbyCharacterPrefab: {fileID: 2365260484671053724, guid: 4ac66bd39788b4ae9a6e7b5773964fcf, type: 3}
+  characterData: {fileID: 11400000, guid: ea6038a01e0a840c0afaa3a9cdfc6ad5, type: 2}
+  characterChoosenChannel: {fileID: 11400000, guid: 1c19cfcc01a6c4948ae66ad76c632dcc, type: 2}
+--- !u!1 &4391193164368462752
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,38 +103,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2223405612330088584}
-  - component: {fileID: 409182151908824392}
-  m_Layer: 6
+  - component: {fileID: 318286369027414295}
+  - component: {fileID: 1388354830258110423}
+  m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2223405612330088584
+--- !u!4 &318286369027414295
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200341574840035763}
+  m_GameObject: {fileID: 4391193164368462752}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7669046005061904256}
+  m_Father: {fileID: 3822286518100950778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &409182151908824392
+--- !u!212 &1388354830258110423
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200341574840035763}
+  m_GameObject: {fileID: 4391193164368462752}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -188,7 +176,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3083089168873209362, guid: 4575126f6de5f4d77bdb3d806d137770, type: 3}
+  m_Sprite: {fileID: -1269651830, guid: 4575126f6de5f4d77bdb3d806d137770, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

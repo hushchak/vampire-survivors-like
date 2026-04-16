@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3179c3b4cf4c5ea4ce235785cbd2b, type: 3}
   m_Name: CharacterData_Knight
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  <Sprite>k__BackingField: {fileID: 3083089168873209362, guid: 4575126f6de5f4d77bdb3d806d137770, type: 3}
+  <MaxHealthPoints>k__BackingField: 50
+  <Regeneration>k__BackingField: 0.2
+  <Defence>k__BackingField: 1
   <MovementSpeed>k__BackingField: 4
+  <AttackSpeed>k__BackingField: 2
+  <CritChance>k__BackingField: 2.5
+  <PickingRadius>k__BackingField: 2.5
